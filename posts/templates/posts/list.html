@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post list</title>
+</head>
+<body>
+    <ul>
+    {% for p in posts %}
+        <li><h1><a href="/posts/{{p.pk}}/"> {{p.pk}}-{{p.title}}</a></h1></li>
+    {%endfor %}
+    </ul>
+
+</body>
+</html>
